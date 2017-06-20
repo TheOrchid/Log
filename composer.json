@@ -1,0 +1,45 @@
+{
+  "name": "orchid/log",
+  "description": "Laravel log",
+  "keywords": [
+    "framework",
+    "laravel",
+    "orchid"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://theorchid.github.io/",
+  "support": {
+    "issues": "https://github.com/theOrchid/Platform/issues",
+    "source": "https://github.com/theOrchid/Platform"
+  },
+  "authors": [
+    {
+      "name": "Alexandr Chernyaev",
+      "email": "bliz48rus@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "Orchid\\Log\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "laravel": {
+      "providers": [
+        "Orchid\\Log\\LogServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "alpha",
+  "prefer-stable": true
+}
