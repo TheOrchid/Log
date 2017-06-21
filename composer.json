@@ -27,7 +27,7 @@
       "src/Log/Support/helpers.php"
     ],
     "psr-4": {
-      "Orchid": "src/"
+      "Orchid\\": "src/"
     }
   },
   "extra": {
