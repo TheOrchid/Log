@@ -1,11 +1,7 @@
 {
   "name": "orchid/log",
-  "description": "Laravel log",
-  "keywords": [
-    "framework",
-    "laravel",
-    "orchid"
-  ],
+  "description": "Orchid CMS logging package",
+  "keywords": ["framework", "laravel", "orchid", "log"],
   "type": "library",
   "license": "MIT",
   "homepage": "https://theorchid.github.io/",
@@ -17,29 +13,30 @@
     {
       "name": "Alexandr Chernyaev",
       "email": "bliz48rus@gmail.com"
+    },
+    {
+      "name": "David Mjomba",
+      "email": "smodavprivate@gmail.com"
     }
   ],
   "require": {
-    "php": ">=7.0"
+    "php": ">=5.6"
   },
   "autoload": {
     "files": [
-      "src/helpers.php"
+      "src/Log/Support/helpers.php"
     ],
     "psr-4": {
-      "Orchid\\Log\\": "src/"
+      "Orchid": "src/"
     }
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
-    },
     "laravel": {
       "providers": [
         "Orchid\\Log\\LogServiceProvider"
       ]
     }
   },
-  "minimum-stability": "alpha",
+  "minimum-stability": "stable",
   "prefer-stable": true
 }
